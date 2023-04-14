@@ -8,16 +8,17 @@
 
 
 
-words ="hello everyone".split
- words.each do |word|
+words ="hello everyone"
+
    
 def new_arr(ar)
+  words = ar.split
   cap_words = []
-  ar.each do |word|
+  words.each do |word|
   cap_words.push(word.capitalize)  
 end
-  cap_words
+  cap_words.join(' ')
 end
- end
 
-p new_arr(words).join(' ')
+
+p new_arr(words)
